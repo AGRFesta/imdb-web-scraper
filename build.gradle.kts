@@ -1,5 +1,5 @@
 plugins {
-    alias(libs.plugins.jvm) // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
+    alias(libs.plugins.jvm)
     alias(libs.plugins.springboot)
     alias(libs.plugins.springbootManagement)
     alias(libs.plugins.kotlin.spring)
@@ -41,6 +41,7 @@ dependencies {
     testImplementation("io.rest-assured:rest-assured")
     testImplementation("io.mockk:mockk:1.13.10")
     testImplementation("com.ninja-squad:springmockk:4.0.2")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-html-jvm:0.7.5")
     testImplementation(libs.ktor.client.mock)
 }
 
