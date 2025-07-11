@@ -35,9 +35,10 @@ dependencies {
     }
     testImplementation("org.junit.jupiter:junit-jupiter-api")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+    testImplementation("io.kotest:kotest-runner-junit5:5.0.3")
     testImplementation(libs.kotest.assertions.core)
     testImplementation(libs.kotest.assertions.arrow)
-    testImplementation("org.testcontainers:junit-jupiter")
+    testImplementation("io.kotest:kotest-extensions-mockserver:4.4.3")
     testImplementation("io.rest-assured:rest-assured")
     testImplementation("io.mockk:mockk:1.13.10")
     testImplementation("com.ninja-squad:springmockk:4.0.2")
